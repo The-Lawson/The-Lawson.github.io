@@ -106,6 +106,7 @@ title: Lawson-Physical Art
   grid-area: Desc8;
   text-align: center;
 }
+
 </style>
 </head>
   
@@ -361,6 +362,11 @@ img {vertical-align: middle;}
 </div>
   
  <script>
+
+   const elem = document.getElementById("Slide1", "Slide1v2", "Slide2", "Slide3", "Slide4", "Slide5", "Slide6", "Slide7", "Slide8");
+if (elem.requestFullscreen) {
+  elem.requestFullscreen();
+}
    
     var slideIndex = [1,1,1,1];
     var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
