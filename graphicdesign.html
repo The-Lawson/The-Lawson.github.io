@@ -36,6 +36,7 @@ title: Lawson-Graphic Design
 }
 .myGrid > div.Slide1 {
   grid-area: Slide1;
+  text-align: center;
 }
 .myGrid > div.Desc1 {
   grid-area: Desc1;
@@ -51,6 +52,7 @@ title: Lawson-Graphic Design
 }
 .myGrid > div.Slide3 {
   grid-area: Slide3;
+  text-align: center;
 }
 .myGrid > div.Desc3 {
   grid-area: Desc3;
@@ -139,7 +141,12 @@ img {vertical-align: middle;}
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
+    
+.prev {
+  left: 0;
+  border-radius:3px 0 0 3px;
+}
+  
 /* Number text (1/3 etc) */
 .numbertext {
   color: #000000;
@@ -170,47 +177,48 @@ img {vertical-align: middle;}
     <div class="slideshow-container">
       <div class="mySlides1">
         <div class="numbertext">1 / 8</div>
-        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.2 V2.png' | relative_url }}" style=width:150%>
+        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.2 V2.png' | relative_url }}" style=width:150% onclick="this.requestFullscreen()">
       </div>
 
       <div class="mySlides1">
         <div class="numbertext">2 / 8</div>
-        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.3 V2.png' | relative_url }}" style=width:150%>
+        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.3 V2.png' | relative_url }}" style=width:150% onclick="this.requestFullscreen()">
       </div>
 
       <div class="mySlides1">
         <div class="numbertext">3 / 8</div>
-        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.3.2.png' | relative_url }}" style=width:150%>
+        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.3.2.png' | relative_url }}" style=width:150% onclick="this.requestFullscreen()">
       </div>
       
       <div class="mySlides1">
         <div class="numbertext">4 / 8</div>
-        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.4.png' | relative_url }}" style=width:150%>
+        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.4.png' | relative_url }}" style=width:150% onclick="this.requestFullscreen()">
       </div>
 
       <div class="mySlides1">
         <div class="numbertext">5 / 8</div>
-        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.4.2.png' | relative_url }}" style=width:150%>
+        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.4.2.png' | relative_url }}" style=width:150% onclick="this.requestFullscreen()">
       </div>
 
       <div class="mySlides1">
         <div class="numbertext">6 / 8</div>
-        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.4.3.png' | relative_url }}" style=width:150%>
+        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.4.3.png' | relative_url }}" style=width:150% onclick="this.requestFullscreen()">
       </div>
 
       <div class="mySlides1">
         <div class="numbertext">7 / 8</div>
-        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.5.1.png' | relative_url }}" style=width:150%>
+        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.5.1.png' | relative_url }}" style=width:150% onclick="this.requestFullscreen()">
       </div>
 
       <div class="mySlides1">
         <div class="numbertext">8 / 8</div>
-        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.5.2.png' | relative_url }}" style=width:150%>
+        <img src="{{ 'assets/img/Graphic Design/Grasshopper thing/Lawson-1.5.2.png' | relative_url }}" style=width:150% onclick="this.requestFullscreen()">
       </div>
 
       <a class="prev" onclick="plusSlides(-1,0)">&#10094</a>
       <a class="next" onclick="plusSlides(1,0)">&#10095</a>
-      
+
+Click or tap image for full screen
     </div>
   </div>
   
@@ -225,7 +233,8 @@ img {vertical-align: middle;}
   </div> 
   
   <div class="Slide2">
-    <img src="{{ 'assets/img/Graphic Design/Lawson-22bday just poster.png' | relative_url }}" style=width:100%>
+    <img src="{{ 'assets/img/Graphic Design/Lawson-22bday just poster.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+    Click or tap image for full screen
   </div>
 
   <div class="Desc2">
@@ -237,17 +246,18 @@ img {vertical-align: middle;}
     <div class="slideshow-container">
       <div class="mySlides2">
         <div class="numbertext">1 / 2</div>
-        <img src="{{ 'assets/img/Graphic Design/Bye Brad/Happy Family Times.png' | relative_url }}" style=width:200%>
+        <img src="{{ 'assets/img/Graphic Design/Bye Brad/Happy Family Times.png' | relative_url }}" style=width:200% onclick="this.requestFullscreen()">
       </div>
 
       <div class="mySlides2">
         <div class="numbertext">2 / 2</div>
-        <img src="{{ 'assets/img/Graphic Design/Bye Brad/Wedding Photo-PRE.jpg' | relative_url }}" style=width:230%>
+        <img src="{{ 'assets/img/Graphic Design/Bye Brad/Wedding Photo-PRE.jpg' | relative_url }}" style=width:230% onclick="this.requestFullscreen()">
       </div>
 
       <a class="prev" onclick="plusSlides(-1,1)">&#10094</a>
       <a class="next" onclick="plusSlides(1,1)">&#10095</a>
-      
+
+      Click or tap image for full screen
     </div>
   </div>
   
@@ -257,7 +267,8 @@ img {vertical-align: middle;}
   </div> 
 
   <div class="Slide4">
-    <img src="{{ 'assets/img/Graphic Design/A Losing Battle- V2.png' | relative_url }}" style=width:100%>
+    <img src="{{ 'assets/img/Graphic Design/A Losing Battle- V2.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+    Click or tap image for full screen
   </div>
 
   <div class="Desc4">
@@ -268,7 +279,8 @@ img {vertical-align: middle;}
   </div> 
 
   <div class="Slide5">
-    <img src="{{ 'assets/img/Graphic Design/Copy of 12 Galaxy Inspired Looks.jpg' | relative_url }}" style=width:80%>
+    <img src="{{ 'assets/img/Graphic Design/Copy of 12 Galaxy Inspired Looks.jpg' | relative_url }}" style=width:80% onclick="this.requestFullscreen()">
+    Click or tap image for full screen
   </div>
   
   <div class="Desc5">
@@ -277,7 +289,8 @@ img {vertical-align: middle;}
   </div>
 
   <div class="Slide6">
-    <img src="{{ 'assets/img/Graphic Design/Grad announcement mock-up 2 5x7.png' | relative_url }}" style=width:100%>
+    <img src="{{ 'assets/img/Graphic Design/Grad announcement mock-up 2 5x7.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+    Click or tap image for full screen
   </div>
   
   <div class="Desc6">
@@ -286,7 +299,8 @@ img {vertical-align: middle;}
   </div>
 
   <div class="Slide7">
-    <img src="{{ 'assets/img/Graphic Design/Grad announcement mock-up 5x7.png' | relative_url }}" style=width:80%>
+    <img src="{{ 'assets/img/Graphic Design/Grad announcement mock-up 5x7.png' | relative_url }}" style=width:80% onclick="this.requestFullscreen()">
+    Click or tap image for full screen
   </div>
 
   <div class="Desc7">
@@ -296,7 +310,8 @@ img {vertical-align: middle;}
   </div>
 
   <div class="Slide8">
-    <img src="{{ 'assets/img/Graphic Design/Lawson-ShelvingV3.1PURSE.png' | relative_url }}" style=width:100%>
+    <img src="{{ 'assets/img/Graphic Design/Lawson-ShelvingV3.1PURSE.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+    Click or tap image for full screen
   </div>
       
   <div class="Desc8">
