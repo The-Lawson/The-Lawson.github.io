@@ -11,17 +11,15 @@ title: Lawson-Social Media
   display: grid;
   grid-template-areas:
     "header header header"
-    "Desc0 Slide0 Slide0"
     "Slide1 Slide1 Desc1"
-    "Desc1v2 Slide1v2 Slide1v2"
-    "Slide2 Slide2 Desc2"
-    "Desc3 Slide3 Slide3"
-    "Slide4 Slide4 Desc4"
-    "Desc5 Slide5 Slide5"
-    "median median median"
-    "Slide6 Slide6 Desc6"
-    "Desc7 Slide7 Slide7"
-    "Slide8 Slide8 Desc8";
+    "Desc2 Slide2 Slide2"
+    "Slide3 Slide3 Desc3"
+    "Desc4 Slide4 Slide4"
+    "Slide5 Slide5 Desc5"
+    "Desc6 Slide6 Slide6" 
+    "Slide7 Slide7 Desc7"
+    "Desc8 Slide8 Slide8"
+    "Slide9 Slide9 Desc9" ;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
   background-color: #FFFFFF;
@@ -35,33 +33,17 @@ title: Lawson-Social Media
   grid-area: header;
   text-align: center;
 }
-.myGrid > div.Slide0 {
-  grid-area: Slide0;
-  text-align: center;
-}
-.myGrid > div.Desc0 {
-  grid-area: Desc0;
-  text-align: center;
-}
 .myGrid > div.Slide1 {
-  grid-area: Slide1;
+  grid-area: Slide1;  
   text-align: center;
 }
 .myGrid > div.Desc1 {
   grid-area: Desc1;
   text-align: center;
 }
-.myGrid > div.Slide1v2 {
-  grid-area: Slide1v2;
-  text-align: center;
-}
-.myGrid > div.Desc1v2 {
-  grid-area: Desc1v2;
-  text-align: center;
-} 
 .myGrid > div.Slide2 {
   grid-area: Slide2;
-  text-align: center;
+    text-align: center;
 }
 .myGrid > div.Desc2 {
   grid-area: Desc2;
@@ -69,7 +51,7 @@ title: Lawson-Social Media
 }
 .myGrid > div.Slide3 {
   grid-area: Slide3;
-  text-align: center;
+    text-align: center;
 }
 .myGrid > div.Desc3 {
   grid-area: Desc3;
@@ -77,7 +59,7 @@ title: Lawson-Social Media
 }
 .myGrid > div.Slide4 {
   grid-area: Slide4;
-  text-align: center;
+    text-align: center;
 }
 .myGrid > div.Desc4 {
   grid-area: Desc4;
@@ -85,17 +67,15 @@ title: Lawson-Social Media
 }
 .myGrid > div.Slide5 {
   grid-area: Slide5;
+    text-align: center;
 }
 .myGrid > div.Desc5 {
   grid-area: Desc5;
   text-align: center;
 }
-.myGrid > div.median {
-  grid-area: median;
-  text-align: center;
-}
 .myGrid > div.Slide6 {
   grid-area: Slide6;
+    text-align: center;
 }
 .myGrid > div.Desc6 {
   grid-area: Desc6;
@@ -103,6 +83,7 @@ title: Lawson-Social Media
 }
 .myGrid > div.Slide7 {
   grid-area: Slide7;
+    text-align: center;
 }
 .myGrid > div.Desc7 {
   grid-area: Desc7;
@@ -110,23 +91,35 @@ title: Lawson-Social Media
 }
 .myGrid > div.Slide8 {
   grid-area: Slide8;
+    text-align: center;
 }
 .myGrid > div.Desc8 {
   grid-area: Desc8;
   text-align: center;
 }
+.myGrid > div.Slide9 {
+  grid-area: Slide9;
+    text-align: center;
+}
+.myGrid > div.Desc9 {
+  grid-area: Desc9;
+  text-align: center;
+}
 
 </style>
 </head>
-  
+<body>
+
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-.mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9 {display: none}
 img {vertical-align: middle;}
-
+blockquote {vertical-align: middle;}
+  
 /* Slideshow container */
 .slideshow-container {
   max-width: 2000px;
@@ -150,16 +143,16 @@ img {vertical-align: middle;}
   user-select: none;
 }
 
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-  .prev {
+  
+.prev {
   left: 0;
   border-radius:3px 0 0 3px;
+}
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -170,6 +163,7 @@ img {vertical-align: middle;}
   top: 0;
 }
 
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -177,272 +171,590 @@ img {vertical-align: middle;}
 </style>
 </head>
 <body>
-   
+
 <div class="myGrid">
   <div class="header">
-    <h1>Social Media Posts</h1>
-    <p>In high school, I was elected "Social Media Person" for Yearbook Club and Improv Club. That is when my enjoyment of social media management began. 
-    Over the years, I've learned how to take and edit photos, create posts, and write engaging captions for multiple accounts. Because I have managed so many different accounts, I
-    have learned how to adjust my strategies for varius audiences.</p>
+    <h1>My Social Media Posts</h1>
+    <p> In high school, I was elected "Social Media Person" for Yearbook Club and Improv Club. That is when my enjoyment of social media management began. 
+      Over the years, I've learned how to take and edit photos, create posts, and write engaging captions for multiple accounts. 
+      Because I have managed so many different accounts, I have learned how to adjust my strategies for varius audiences. </p>
   </div>
-
-  <div class="Slide0">
-   <div class="slideshow-container">
-      <div class="mySlides1">
-        <div class="numbertext">1 / 5</div>
-  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DZIZ9tOjlkI/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:500px; max-height:650px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DZIZ9tOjlkI/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DZIZ9tOjlkI/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Impulse Alarm (@impulsealarm)</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>      </div>
-
-      <div class="mySlides1">
-        <div class="numbertext">2 / 5</div>
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DY7iLB3Fajr/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:500px; max-height:650px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DY7iLB3Fajr/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DY7iLB3Fajr/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Impulse Alarm (@impulsealarm)</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>      </div>
-
-      <div class="mySlides1">
-        <div class="numbertext">3 / 5</div>
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DZ-et0yjpyg/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:500px; max-height:650px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DZ-et0yjpyg/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DZ-et0yjpyg/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Impulse Alarm (@impulsealarm)</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>      </div>
-
-        <a class="prev" onclick="plusSlides(-1,0)">&#10094</a>
-      <a class="next" onclick="plusSlides(1,0)">&#10095</a>
-
-   </div>
-  </div>
-
-  
-  <div class="Desc0">
-    <h2>Impulse Alarm</h2>
-    <h4>Instagram, Facebook, and LinkedIn, 2026 </h4>
-    <p> Impulse Alarm is a Brinks Home Authorized Dealer that offers home security systems. 
-      The goal while managing these accounts was to let people know that we are a legit and trustworthy company whenever anyone looked us up. </p>
-  </div>    
   
   <div class="Slide1">
-  
-<br> 
-      Click or tap image for full screen
-  </div>
-
-  
-  <div class="Desc1">
-    <h2>"Who Put the Duck on the Wall?"</h2>
-    <h4>Acrylic Paint on BFK, 2025 </h4>
-  </div> 
-  
-  <div class="Slide1v2">
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7483204011555192832" height="650" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe><script async src="//www.instagram.com/embed.js"></script>      </div>
-<br> 
-      Click or tap image for full screen
-  </div>
-
-  
-  <div class="Desc1v2">
-    <h2>Positioned Hand</h2>
-    <h4>Watercolor, 2020</h4>
-  </div> 
-    
-  <div class="Slide2">
-    <img src="{{ 'assets/img/Physical Art/Flower Hand.jpg' | relative_url }}" style=width:60% onclick="this.requestFullscreen()">
-<br> 
-      Click or tap image for full screen
-  </div>
-
-  
-  <div class="Desc2">
-    <h2>Flower in Hand</h2>
-    <h4>Watercolor, 2018</h4>
-  </div> 
-
-  <div class="Slide3">
-    <img src="{{ 'assets/img/Physical Art/Lawson_Vintage_Tool.png' | relative_url }}" style=width:60% onclick="this.requestFullscreen()">
-<br> 
-      Click or tap image for full screen
-  </div>
-
-  
-  <div class="Desc3">
-    <h2>Rotary Egg Beater Study</h2>
-    <h4>Pencil on BFK, 2021</h4>
-  </div> 
-
-  <div class="Slide4">
-    <img src="{{ 'assets/img/Physical Art/Lawson, Savanna- Chair Axon 1.jpg' | relative_url }}" style=width:60% onclick="this.requestFullscreen()">
-<br> 
-      Click or tap image for full screen
-  </div>
-
-  
-  <div class="Desc4">
-    <h2>Chair Axonometric</h2>
-    <h4>Pencil, 2021</h4>
-  </div> 
-
-  <div class="Slide5">
     <div class="slideshow-container">
       <div class="mySlides1">
-        <div class="numbertext">1 / 3</div>
-        <img src="{{ 'assets/img/Physical Art/Constructing the Image/Lawson-1.1A-Constructing the ImageV4_Page_5.png' | relative_url }}" style=width:200% onclick="this.requestFullscreen()">
+        <div class="numbertext">1 / 8</div>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DZ-et0yjpyg/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DZ-et0yjpyg/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DZ-et0yjpyg/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Impulse Alarm (@impulsealarm)</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>      </div>
+
+      <div class="mySlides1">
+        <div class="numbertext">2 / 8</div>
+        <img src="{{ 'assets/img/architecture/Tree thing/Lawson_The Path, The Room, and The Window FOR PORTFOLIO_Page_2.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
       </div>
 
       <div class="mySlides1">
-        <div class="numbertext">2 / 3</div>
-        <img src="{{ 'assets/img/Physical Art/Constructing the Image/Lawson-1.1A-Constructing the ImageV4_Page_6.png' | relative_url }}" style=width:200% onclick="this.requestFullscreen()">
+        <div class="numbertext">3 / 8</div>
+        <img src="{{ 'assets/img/architecture/Tree thing/Lawson_The Path, The Room, and The Window FOR PORTFOLIO_Page_3.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
       </div>
 
       <div class="mySlides1">
-        <div class="numbertext">3 / 3</div>
-        <img src="{{ 'assets/img/Physical Art/Constructing the Image/Lawson-1.1A-Constructing the ImageV4_Page_1.png' | relative_url }}" style=width:200% onclick="this.requestFullscreen()">
+        <div class="numbertext">4 / 8</div>
+        <img src="{{ 'assets/img/architecture/Tree thing/Lawson_The Path, The Room, and The Window FOR PORTFOLIO_Page_4.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+      </div>
+       <div class="mySlides1">
+        <div class="numbertext">5 / 8</div>
+        <img src="{{ 'assets/img/architecture/Tree thing/Lawson_The Path, The Room, and The Window FOR PORTFOLIO_Page_5.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
       </div>
 
+      <div class="mySlides1">
+        <div class="numbertext">6 / 8</div>
+        <img src="{{ 'assets/img/architecture/Tree thing/Lawson_The Path, The Room, and The Window FOR PORTFOLIO_Page_6.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides1">
+        <div class="numbertext">7 / 8</div>
+        <img src="{{ 'assets/img/architecture/Tree thing/Lawson_The Path, The Room, and The Window FOR PORTFOLIO_Page_7.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides1">
+        <div class="numbertext">8 / 8</div>
+        <img src="{{ 'assets/img/architecture/Tree thing/Lawson_The Path, The Room, and The Window FOR PORTFOLIO_Page_1.png' | relative_url }}" style=width:90% onclick="this.requestFullscreen()">
+      </div>
+      
       <a class="prev" onclick="plusSlides(-1,0)">&#10094</a>
       <a class="next" onclick="plusSlides(1,0)">&#10095</a>
-
-      <br> 
+<br> 
       Click or tap image for full screen
       
     </div>
   </div>
-  
-  <div class="Desc5">
-    <h2>Constructing the Image</h2>
-    <h4>Cardstock, 2022</h4>
+
+  <div class="Desc1">
+    <h2>The House and The View</h2>
+    <h4>Rhino, 2022</h4>
+    <p>In 1998, photographer Richard Misrach took a series of photos along "Cancer Alley", a part of the Mississippi River with a heavy and detrimental industrial presence. 
+      One of his photos, "Cypress Swamp, Alligator Bayou, Prairieville, Louisiana" (Slide 8), served as an inspiration for an artist’s studio  that focused on the view. 
+      The studio, inspired by Studio Gang's Arcus Center for Social Justice, Tod Williams+Billie Tsein's The Barnes Foundation, and Robert Venturi's Brant-Johnson Ski House, features an interior facade made of tree trunks. 
+      It also contains an office area with a large viewing window, a dock accessible by boat, storage, and hanging fixtures to display art. </p>
   </div>
 
-  <div class="median">
-    <hr>
-    <h3>Drawings from my Sketchbooks</h3>
-  </div>
-  
-  <div class="Slide6">
+  <div class="Slide2">
     <div class="slideshow-container">
       <div class="mySlides2">
         <div class="numbertext">1 / 4</div>
-        <img src="{{ 'assets/img/Physical Art/Hands/PXL_20250226_033517086.MP~2.jpg' | relative_url }}" style=width:65% onclick="this.requestFullscreen()">
+        <img src="{{ 'assets/img/architecture/Vertical Home/Lawson-Vertical Home V4_Page_4.png' | relative_url }}" style=width:70% onclick="this.requestFullscreen()">
       </div>
 
-      <div class="mySlides2">
-        <div class="numbertext">2 / 4</div>
-        <img src="{{ 'assets/img/Physical Art/Hands/PXL_20250226_033314837.MP~2.jpg' | relative_url }}" style=width:85% onclick="this.requestFullscreen()">
+    <div class="mySlides2">
+      <div class="numbertext">2 / 4</div>
+      <img src="{{ 'assets/img/architecture/Vertical Home/Lawson-Vertical Home V4_Page_1.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">3 / 4</div>
+      <img src="{{ 'assets/img/architecture/Vertical Home/Lawson-Vertical Home V4_Page_2.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">4 / 4</div>
+      <img src="{{ 'assets/img/architecture/Vertical Home/Lawson-Vertical Home V4_Page_3.png' | relative_url }}" style=width:70% onclick="this.requestFullscreen()">
+    </div>
+ 
+    <a class="prev" onclick="plusSlides(-1,1)">&#10094</a>
+    <a class="next" onclick="plusSlides(1,1)">&#10095</a>
+
+      <br>
+            Click or tap image for full screen
+    </div>
+  </div>
+
+  <div class="Desc2">
+    <h2>The Vertical Home</h2>
+    <h4>Rhino, 2023</h4>
+    <p>The Vertical Home is a design influenced by a group of clients with varying needs: five college students and their dog. 
+      The limited footprint of the project was the primary constraint, but the home was able to have as many floors as needed. 
+      The first floor, which is the most accessible for all occupants, contains a kitchen and areas for dining, living, and laundry. 
+      The three floors below and the two above have a bathroom, desk, and a bedroom for each student that can be closed off to the communal stairs. 
+      The roof serves as an additional lounge space with a small garden. </p>
+  </div>
+
+  <div class="Slide3">
+    <div class="slideshow-container">
+      <div class="mySlides3">
+        <div class="numbertext">1 / 9</div>
+        <img src="{{ 'assets/img/architecture/Sectional Home/Lawson-Sectional Home V7_Page_8.png' | relative_url }}" style=width:60% onclick="this.requestFullscreen()">
       </div>
 
-      <div class="mySlides2">
-        <div class="numbertext">3 / 4</div>
-        <img src="{{ 'assets/img/Physical Art/Hands/PXL_20250226_033531258.MP~2.jpg' | relative_url }}" style=width:85% onclick="this.requestFullscreen()">
+      <div class="mySlides3">
+        <div class="numbertext">2 / 9</div>
+        <img src="{{ 'assets/img/architecture/Sectional Home/Lawson-Sectional Home V7_Page_1.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
       </div>
 
-      <div class="mySlides2">
-        <div class="numbertext">4 / 4</div>
-        <img src="{{ 'assets/img/Physical Art/Hands/PXL_20250226_033651492.MP~2.jpg' | relative_url }}" style=width:85% onclick="this.requestFullscreen()">
+      <div class="mySlides3">
+        <div class="numbertext">3 / 9</div>
+        <img src="{{ 'assets/img/architecture/Sectional Home/Lawson-Sectional Home V7_Page_2.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
       </div>
 
-      <a class="prev" onclick="plusSlides(-1,1)">&#10094</a>
-      <a class="next" onclick="plusSlides(1,1)">&#10095</a>
+      <div class="mySlides3">
+        <div class="numbertext">4 / 9</div>
+        <img src="{{ 'assets/img/architecture/Sectional Home/Lawson-Sectional Home V7_Page_3.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+      </div>
+      <div class="mySlides3">
+        <div class="numbertext">5 / 9</div>
+        <img src="{{ 'assets/img/architecture/Sectional Home/Lawson-Sectional Home V7_Page_4.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+      </div>
 
-      <br> 
-      Click or tap image for full screen
+      <div class="mySlides3">
+        <div class="numbertext">6 / 9</div>
+        <img src="{{ 'assets/img/architecture/Sectional Home/Lawson-Sectional Home V7_Page_5.png' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides3">
+        <div class="numbertext">7 / 9</div>
+        <img src="{{ 'assets/img/architecture/Sectional Home/Lawson-Sectional Home V7_Page_6.png' | relative_url }}" style=width:60% onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides3">
+        <div class="numbertext">8 / 9</div>
+        <img src="{{ 'assets/img/architecture/Sectional Home/Lawson-Sectional Home V7_Page_7.png' | relative_url }}" style=width:60% onclick="this.requestFullscreen()">
+      </div> 
       
+      <div class="mySlides3">
+        <div class="numbertext">9 / 9</div>
+        <img src="{{ 'assets/img/architecture/Sectional Home/Lawson-Sectional Home V7_Page_9.png' | relative_url }}" style=width:60% onclick="this.requestFullscreen()">
+      </div>
+ 
+      <a class="prev" onclick="plusSlides(-1,2)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,2)">&#10095</a>
+
+      <br>
+            Click or tap image for full screen
+    </div>
+  </div>
+
+  <div class="Desc3">
+    <h2>The Sectional Home</h2>
+    <h4>Rhino, 2022</h4>
+    <p>The Sectional Home, while having the same clients as The Vertical Home, provided a new challenge of each room needing to be unique in section. 
+      I took inspiration from the shape of a cartoon lightning bolt as well as SANAA's New Museum to create "A Shocking Construction". Each floor is accessible by a set of stairs as well as an elevator. 
+      Each floor also contains a balcony with each balcony serving a different purpose, such as a flower garden, a vegetable garden, a shaded lounge area, and a dog-centered area. 
+    </p>
+  </div>
+  
+  <div class="Slide4">
+    <div class="slideshow-container">
+      <div class="mySlides4">
+        <div class="numbertext">1 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_21.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">2 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_01.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">3 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_02.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">4 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_03.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+      <div class="mySlides4">
+        <div class="numbertext">5 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_04.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">6 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_05.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">7 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_06.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">8 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_07.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div> 
+      
+      <div class="mySlides4">
+        <div class="numbertext">9 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_08.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>      
+
+      <div class="mySlides4">
+        <div class="numbertext">10 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_09.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">11 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_10.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">12 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_11.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">13 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_12.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+      <div class="mySlides4">
+        <div class="numbertext">14 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_13.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">15 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_14.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">16 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_15.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">17 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_16.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div> 
+      
+      <div class="mySlides4">
+        <div class="numbertext">18 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_17.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">19 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_18.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides4">
+        <div class="numbertext">20 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_19.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div> 
+      
+      <div class="mySlides4">
+        <div class="numbertext">21 / 21</div>
+        <img src="{{ 'assets/img/architecture/The Mines/Jefferson Salt Mine Portfolio_Page_20.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1,3)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,3)">&#10095</a>
+
+      <br>
+            Click or tap image for full screen
+    </div>
+  </div>
+
+  <div class="Desc4">
+    <h2>Jefferson Island Museum</h2>
+    <h4>Rhino, Museum Board, Card Stock, 2022</h4>
+    <p>The abnormal height of Jefferson Island, caused by a salt dome, is what gives this location its name. 
+      This salt dome, originally home to extensive salt mines, experienced an oil rig accident that filled the mines with water. 
+      There were no casualties, but the mines were closed off afterwards. Using the abandoned mines as inspiration, I designed a visitor center/museum for people to learn about the history of the site. 
+      The influence for the center came from the shapes and angles of the mines, Eduardo Souto de Moura's Uitzicht Crematorium, and Thomas Phifer's Glenstone Museum. 
+      The building is partially embedded in the ground, with sloped earth leading down to the front entrance. 
+      This allows for a public observation area on one part of the building and a private office space on the other.   </p>
+  </div>
+
+  <div class="Slide5">
+    <div class="slideshow-container">
+      <div class="mySlides5">
+        <div class="numbertext">1 / 8</div>
+        <img src="{{ 'assets/img/architecture/Tulane Depot/Lawson- Tulane Depot for Portfolio_Page_6.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">2 / 8</div>
+      <img src="{{ 'assets/img/architecture/Tulane Depot/Lawson- Tulane Depot for Portfolio_Page_1.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">3 / 8</div>
+      <img src="{{ 'assets/img/architecture/Tulane Depot/Lawson- Tulane Depot for Portfolio_Page_2.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">4 / 8</div>
+      <img src="{{ 'assets/img/architecture/Tulane Depot/Lawson- Tulane Depot for Portfolio_Page_3.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">5 / 8</div>
+      <img src="{{ 'assets/img/architecture/Tulane Depot/Lawson- Tulane Depot for Portfolio_Page_4.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">6 / 8</div>
+      <img src="{{ 'assets/img/architecture/Tulane Depot/Lawson- Tulane Depot for Portfolio_Page_5.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">7 / 8</div>
+      <img src="{{ 'assets/img/architecture/Tulane Depot/Lawson- Tulane Depot for Portfolio_Page_7.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">8 / 8</div>
+      <img src="{{ 'assets/img/architecture/Tulane Depot/Lawson- Tulane Depot for Portfolio_Page_8.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+ 
+    <a class="prev" onclick="plusSlides(-1,4)">&#10094</a>
+    <a class="next" onclick="plusSlides(1,4)">&#10095</a>
+
+      <br>
+            Click or tap image for full screen
+    </div>
+  </div>
+
+  <div class="Desc5">
+    <h2>The Tulane Depot</h2>
+    <h4>Rhino, 2022</h4>
+    <p>Tulane University is home to thousands of archival materials branching across multiple areas of study. 
+      These materials are rarely viewed, however, because there is not enough space to safely display them. 
+      The Tulane Depot is a museum complete with office spaces, study spaces, and room for different types of displays. 
+      The pattern of the walls and shelves, inspired by John Hejduk’s Diamond Museum C (Slide 2), create different spatial relationships, such as private areas for study and public areas for collaboration. </p>
+  </div>
+
+  <div class="Slide6">
+    <div class="slideshow-container">
+      <div class="mySlides6">
+        <div class="numbertext">1 / 2</div>
+        <img src="{{ 'assets/img/architecture/TRAIN/Lawson_Savanna_Minguito_drawing small Space-Resubmission portfolio_Page_1.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides6">
+        <div class="numbertext">2 / 2</div>
+        <img src="{{ 'assets/img/architecture/TRAIN/Lawson_Savanna_Minguito_drawing small Space-Resubmission portfolio_Page_2.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+ 
+      <a class="prev" onclick="plusSlides(-1,5)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,5)">&#10095</a>
+
+      <br>
+            Click or tap image for full screen
     </div>
   </div>
 
   <div class="Desc6">
-    <h2>Hands</h2>
-    <h4>Pencil, 2022-2023</h4>
-  </div>
-
+    <h2>The Golden Eagle Luxury Train</h2>
+    <h4>Rhino, 2023</h4>
+    <p>The Golden Eagle Luxury Train plan was created from a study about inhabiting small spaces as a precursor to my Vertical and Sectional Home projects. 
+      This study, complete with scaled figures, allowed me to play with the idea of just how little space was needed for a person to live comfortably. 
+      Even with a small footprint, these rooms contain large beds, lounging areas, and a complete bathroom while still leaving space in the carriage for mechanical and storage rooms. </p>
+  </div>  
+  
   <div class="Slide7">
     <div class="slideshow-container">
-      <div class="mySlides3">
-        <div class="numbertext">1 / 3</div>
-        <img src="{{ 'assets/img/Physical Art/Architecture/PXL_20250226_033001556.MP~2.jpg' | relative_url }}" style=width:85% onclick="this.requestFullscreen()">
+      <div class="mySlides7">
+        <div class="numbertext">1 / 10</div>
+        <img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_10.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
       </div>
 
-      <div class="mySlides3">
-        <div class="numbertext">2 / 3</div>
-        <img src="{{ 'assets/img/Physical Art/Architecture/PXL_20250226_032951998.MP~2.jpg' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      <div class="mySlides7">
+        <div class="numbertext">2 / 10</div>
+        <img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_05.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
       </div>
 
-      <div class="mySlides3">
-        <div class="numbertext">3 / 3</div>
-        <img src="{{ 'assets/img/Physical Art/Architecture/PXL_20250226_033034856.MP~2.jpg' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      <div class="mySlides7">
+        <div class="numbertext">3 / 10</div>
+        <img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_06.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
       </div>
 
-      <a class="prev" onclick="plusSlides(-1,2)">&#10094</a>
-      <a class="next" onclick="plusSlides(1,2)">&#10095</a>
+      <div class="mySlides7">
+        <div class="numbertext">4 / 10</div>
+        <img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_07.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+       <div class="mySlides7">
+        <div class="numbertext">5 / 10</div>
+        <img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_08.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
 
-      <br> 
-      Click or tap image for full screen
-      
+      <div class="mySlides7">
+        <div class="numbertext">6 / 10</div>
+        <img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_09.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides7">
+        <div class="numbertext">7 / 10</div>
+        <img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_11.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides7">
+        <div class="numbertext">8 / 10</div>
+        <img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_12.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+ 
+      <div class="mySlides7">
+        <div class="numbertext">9 / 10</div>
+        <img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_13.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides7">
+        <div class="numbertext">10 / 10</div>
+        <img src="{{ 'assets/img/architecture/Miro OG/Lawson- Friday Review 9-20_Page_14.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+ 
+      <a class="prev" onclick="plusSlides(-1,6)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,6)">&#10095</a>
+
+      <br>
+            Click or tap image for full screen
     </div>
   </div>
 
   <div class="Desc7">
-    <h2>Architecture</h2>
-    <h4>Pencil, 2024</h4>
+    <h2>The Public Porch and the Private Backyard</h2>
+    <h4>Rhino, Photoshop, 2024</h4>
+    <p>This project was designed with the unhoused community of New Orleans in mind. 
+      Most of the housing lots in New Orleans are very long with little width, with a major challenge being creating a community without everyone being able to reach the street. 
+      This design emphasizes the idea of celebrating the common front porch culture of the south, while also providing a private back yard for security. 
+      This plan is made up of two duplexes which share a backyard wall to maximize the square footage and provide a variety of floor plan options. 
+      The windows are optimized for community viewing and letting in eastern and northern light to avoid the heat of southern exposure. </p>
   </div>
 
   <div class="Slide8">
     <div class="slideshow-container">
-      <div class="mySlides4">
-        <div class="numbertext">1 / 7</div>
-        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_032725777.MP~2.jpg' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
+      <div class="mySlides8">
+        <div class="numbertext">1 / 9</div>
+        <img src="{{ 'assets/img/architecture/Urbanbuild/Portfolio Urbanbuild_Page_1.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
       </div>
 
-      <div class="mySlides4">
-        <div class="numbertext">2 / 7</div>
-        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_033055269.MP~2.jpg' | relative_url }}" style=width:75% onclick="this.requestFullscreen()">
-      </div>
-
-      <div class="mySlides4">
-        <div class="numbertext">3 / 7</div>
-        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_033026539.MP~2.jpg' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
-      </div>
-
-      <div class="mySlides4">
-        <div class="numbertext">4 / 7</div>
-        <img src="{{ 'assets/img/Physical Art/People/PXL_20230930_023140245.MP~2.jpg' | relative_url }}" style=width:75% onclick="this.requestFullscreen()">
-      </div>
-
-      <div class="mySlides4">
-        <div class="numbertext">5 / 7</div>
-        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_033140807.MP~2.jpg' | relative_url }}" style=width:85% onclick="this.requestFullscreen()">
-      </div>
-
-      <div class="mySlides4">
-        <div class="numbertext">6 / 7</div>
-        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_033225342.MP~2.jpg' | relative_url }}" style=width:85% onclick="this.requestFullscreen()">
-      </div>
-
-      <div class="mySlides4">
-        <div class="numbertext">7 / 7</div>
-        <img src="{{ 'assets/img/Physical Art/People/PXL_20250226_033247390.MP~2.jpg' | relative_url }}" style=width:100% onclick="this.requestFullscreen()">
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1,3)">&#10094</a>
-      <a class="next" onclick="plusSlides(1,3)">&#10095</a>
-
-      <br> 
-      Click or tap image for full screen
-      
+    <div class="mySlides8">
+      <div class="numbertext">2 / 9</div>
+      <img src="{{ 'assets/img/architecture/Urbanbuild/Portfolio Urbanbuild_Page_2.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
     </div>
-      
-  </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">3 / 9</div>
+      <img src="{{ 'assets/img/architecture/Urbanbuild/Portfolio Urbanbuild_Page_3.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">4 / 9</div>
+      <img src="{{ 'assets/img/architecture/Urbanbuild/Portfolio Urbanbuild_Page_4.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">5 / 9</div>
+      <img src="{{ 'assets/img/architecture/Urbanbuild/Portfolio Urbanbuild_Page_5.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">6 / 9</div>
+      <img src="{{ 'assets/img/architecture/Urbanbuild/Portfolio Urbanbuild_Page_6.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">7 / 9</div>
+      <img src="{{ 'assets/img/architecture/Urbanbuild/Portfolio Urbanbuild_Page_7.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">8 / 9</div>
+      <img src="{{ 'assets/img/architecture/Urbanbuild/Model 1.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
+
+    <div class="mySlides8">
+      <div class="numbertext">9 / 9</div>
+      <img src="{{ 'assets/img/architecture/Urbanbuild/Model 2.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+    </div>
   
+    <a class="prev" onclick="plusSlides(-1,7)">&#10094</a>
+    <a class="next" onclick="plusSlides(1,7)">&#10095</a>
+
+      <br>
+            Click or tap image for full screen
+    </div>
+  </div>
+
   <div class="Desc8">
-      <h2>People</h2>
-      <h4>Pencil, 2022-2024</h4>
+    <h2>The Gardening Community</h2>
+    <h4>Rhino, Chipboard with Screen Mesh, 2024</h4>
+    <p>The Gardening Community evolved from plans for URBANbuild 20, a Tulane student-run design-build program, for Miro Street in the 9th ward. 
+      The program I participated in was for designing tiny homes for the unhouses population in New Orleans in collaboration with Louvis Services. 
+      My design expanded on the idea of giving the rehabilitated a community-helping job, such as growing food in a garden. 
+      It also supports the front porch culture of the south, with a public front porch and lounging area as well as a screened-in side porch for privacy and protection from bugs and the elements. 
+      The interior features a movable wall, allowing for different programs in different rooms, depending on the user’s needs. </p>
   </div>
+
+  <div class="Slide9">
+    <div class="slideshow-container">
+      <div class="mySlides9">
+        <div class="numbertext">1 / 7</div>
+        <img src="{{ 'assets/img/architecture/NAWIC/20-PS-NV-290134-027-HD_Page_2.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides9">
+        <div class="numbertext">2 / 7</div>
+        <img src="{{ 'assets/img/architecture/NAWIC/20-PS-NV-290134-027-HD_Page_3.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides9">
+        <div class="numbertext">3 / 7</div>
+        <img src="{{ 'assets/img/architecture/NAWIC/20-PS-NV-290134-027-HD_Page_4.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides9">
+        <div class="numbertext">4 / 7</div>
+        <img src="{{ 'assets/img/architecture/NAWIC/20-PS-NV-290134-027-HD_Page_5.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides9">
+        <div class="numbertext">5 / 7</div>
+        <img src="{{ 'assets/img/architecture/NAWIC/20-PS-NV-290134-027-HD_Page_6.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides9">
+        <div class="numbertext">6 / 7</div>
+        <img src="{{ 'assets/img/architecture/NAWIC/20-PS-NV-290134-027-HD_Page_7.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
+
+      <div class="mySlides9">
+        <div class="numbertext">7 / 7</div>
+        <img src="{{ 'assets/img/architecture/NAWIC/20-PS-NV-290134-027-HD_Page_8.png' | relative_url }}" style="width:100%" onclick="this.requestFullscreen()">
+      </div>
   
+      <a class="prev" onclick="plusSlides(-1,8)">&#10094</a>
+      <a class="next" onclick="plusSlides(1,8)">&#10095</a>
+
+      <br>
+            Click or tap image for full screen
+    </div>
+  </div>
+
+  <div class="Desc9">
+    <h2>USS Cod Submarine Memorial for NAWIC</h2>
+    <h4>AutoCAD, 2020</h4>
+    <p>I designed this museum for a competition with National Association of Women in Construction (NAWIC) in high school. 
+      This project taught me the fundamentals of architectural drafting, such as how to create schedules, design electrical plans, and properly dimension plans. 
+      As a public museum with private space, the plan features a private hallway as well as a private second floor for fragile artifacts. 
+      We also had a limited square footage to work with, so the necessary amenities needed to be included while leaving space for an assembly area. 
+      The roof and exterior facade are made up of metal flashing, inspired by the nearby public buildings to the submarine.  </p>
+  </div>  
 </div>
   
  <script>
-   
-    var slideIndex = [1,1,1,1];
-    var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+    var slideIndex = [1,1,1,1,1,1,1,1,1];
+    var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9"]
     showSlides(1, 0);
     showSlides(1, 1);
     showSlides(1, 2);
     showSlides(1, 3);
-
+    showSlides(1, 4);
+    showSlides(1, 5);
+    showSlides(1, 6);
+    showSlides(1, 7);
+    showSlides(1, 8);
+   
     function plusSlides(n, no) {
       showSlides(slideIndex[no] += n, no);
     }
@@ -457,7 +769,6 @@ img {vertical-align: middle;}
       }
       x[slideIndex[no]-1].style.display = "block";
     }
-
     </script>
 
 </body>
